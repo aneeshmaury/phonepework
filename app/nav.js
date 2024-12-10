@@ -102,7 +102,7 @@ function App() {
 
         <div className="flex justify-start mb-2">
           <div className="bg-gray-300 text-black p-3 rounded-lg max-w-xs">
-            <p>As a security measure, we'll first verify your payment details and block the account to which you've made this payment.</p>
+            <p>As a security measure, we&apos;ll first verify your payment details and block the account to which you&apos;ve made this payment.</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span> {/* Time on the right side */}
             </div>
@@ -111,7 +111,7 @@ function App() {
 
         <div className="flex justify-end mb-2">
           <div className="bg-[#6A1B9A] text-white p-3 rounded-lg max-w-xs">
-            <p>Yes, block the fraudster's account.</p>
+            <p>Yes, block the fraudster&apos;s account.</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-300">{currentTime}</span> {/* Time on the right side */}
             </div>
