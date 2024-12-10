@@ -27,7 +27,8 @@ const HeaderBar = () => {
      <p>English</p>
      <div className="text-[15px]"><TiArrowSortedDown /></div>
   </div>
-  <div class="mt-4 w-full h-[2px] bg-gray-300 shadow-2xl"></div>
+  <div class="my-8 w-full h-[4px] bg-gray-300 shadow-[0_15px_30px_-10px_rgba(0,0,0,0.6),0_25px_50px_-12px_rgba(0,0,0,0.4)]"></div>
+
 
 
 
