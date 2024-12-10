@@ -4,32 +4,8 @@ import React, { useEffect, useState } from "react";
 import { FaArrowLeft } from "react-icons/fa"; // Left arrow icon
 import { TiArrowSortedDown } from "react-icons/ti"; // Down arrow icon
 
-// Chat message with live time (only Hour:Minutes AM/PM)
-const ChatWithTime = () => {
-  const [currentTime, setCurrentTime] = useState("");
 
-  useEffect(() => {
-    const updateCurrentTime = () => {
-      const now = new Date();
-      const time = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true });
-      setCurrentTime(time);
-    };
 
-    const interval = setInterval(updateCurrentTime, 1000);
-    updateCurrentTime(); // Initialize immediately
-
-    return () => clearInterval(interval); // Cleanup
-  }, []);
-
-  return (
-    <div className="fixed bg-gray-200 bottom-[450px] right-[15px] rounded-tl-2xl rounded-br-2xl rounded-bl-2xl text-black p-4">
-      <p className="text-sm">Made a payment to a fraudster for<br/> another reason</p>
-      <span className="absolute bottom-1 right-2 text-xs text-gray-500">
-        {currentTime}
-      </span>
-    </div>
-  );
-};
 
 const HeaderBar = () => {
   return (
@@ -64,12 +40,7 @@ function App() {
     <div className="min-h-screen bg-gray-100">
       {/* Header Bar */}
       <HeaderBar />
-
-      {/* Chat Section */}
-      <div className="flex justify-center items-center mt-8">
-        <ChatWithTime />
-      </div>
-    </div>
+</div>
   );
 }
 
