@@ -70,7 +70,7 @@ function App() {
 
         {/* Receiver Messages */}
         <div className="flex justify-start mb-2">
-          <div className="bg-gray-100 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+          <div className="bg-teal-100 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
             <p>Please enter the text below</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
