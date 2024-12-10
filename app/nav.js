@@ -30,7 +30,7 @@ const HeaderBar = () => {
         </div>
       </div>
 
-      <div className="mt-4 w-full h-[1px] bg-gray-100 shadow-sm"></div>
+      <div className="mt-4 w-full h-[2px] bg-gray-100 shadow-sm"></div>
     </div>
   );
 };
