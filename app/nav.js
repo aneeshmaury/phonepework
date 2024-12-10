@@ -22,7 +22,7 @@ const ChatWithTime = () => {
   }, []);
 
   return (
-    <div className="relative bg-gray-200 bottom-4 left-14 rounded-tl-2xl rounded-br-2xl rounded-bl-2xl text-black p-4">
+    <div className="fixed bg-gray-200 bottom-[450px] right-[15px] rounded-tl-2xl rounded-br-2xl rounded-bl-2xl text-black p-4">
       <p className="text-sm">Made a payment to a fraudster for<br/> another reason</p>
       <span className="absolute bottom-1 right-2 text-xs text-gray-500">
         {currentTime}
