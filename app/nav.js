@@ -9,13 +9,13 @@ const HeaderBar = () => {
     <div className="bg-[#6A1B9A] text-white flex items-center justify-between p-4">
       <div className="flex items-center gap-6">
          <div><FaArrowLeft /> </div>
-      <div className="text-lg">Help</div>
+      <div className="text-[18px]">Help</div>
       </div>
      
 
       <div>
 <div className="flex items-center gap-6">
-     <p>VIEW TICKETS</p>
+     <p className="font-[14px]">VIEW TICKETS</p>
       </div>
 
       </div>
