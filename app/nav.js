@@ -88,7 +88,7 @@ function App() {
         </div>
 
         <div className="flex justify-start mb-2">
-          <div className="bg-slate-200 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+          <div className="bg-gray-200  text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
             <p>I understand how upsetting it is to lose your money, Aneesh Kumar Maury.</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
@@ -97,7 +97,7 @@ function App() {
         </div>
 
         <div className="flex justify-start mb-2">
-          <div className="bg-slate-100 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+          <div className="bg-gray-100 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
             <p>As a security measure, we&apos;ll first verify your payment details and block the account to which you&apos;ve made this payment.</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
