@@ -60,7 +60,7 @@ function App() {
       <div className="flex-1 overflow-auto p-4">
         {/* Sender Messages */}
         <div className="flex justify-end mb-2">
-          <div className="bg-purple-200 text-black p-3 rounded-tl-3xl rounded-bl-3xl rounded-br-3xl max-w-xs">
+          <div className="bg-[#E8DDF7] text-black p-3 rounded-tl-3xl rounded-bl-3xl rounded-br-3xl max-w-xs">
             <p>Made a payment to a fraudster for another reason</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
@@ -70,7 +70,7 @@ function App() {
 
         {/* Receiver Messages */}
         <div className="flex justify-start mb-2">
-          <div className="bg-neutral-100 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+          <div className="bg-gray-100 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
             <p>Please enter the text below</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
@@ -79,7 +79,7 @@ function App() {
         </div>
 
         <div className="flex justify-end mb-2">
-          <div className="bg-purple-200 text-black p-3 rounded-tl-3xl rounded-bl-3xl rounded-br-3xl max-w-xs">
+          <div className="bg-purple-100 text-black p-3 rounded-tl-3xl rounded-bl-3xl rounded-br-3xl max-w-xs">
             <p>9345467502@ptyes</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
@@ -106,7 +106,7 @@ function App() {
         </div>
 
         <div className="flex justify-end mb-2">
-          <div className="bg-purple-200 text-black p-3 rounded-tl-3xl rounded-bl-3xl rounded-br-3xl max-w-xs">
+          <div className="bg-purple-100 text-black p-3 rounded-tl-3xl rounded-bl-3xl rounded-br-3xl max-w-xs">
             <p>Yes, block the fraudster&apos;s account.</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
