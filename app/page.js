@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
+import HeaderBar from "./nav";
 
 const App = () => {
   useEffect(() => {
@@ -23,8 +24,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>React Status Bar Color lokjsdsjhfffffffffffffffffffffffffffffff
-      </h1>
+      <HeaderBar/>
     </div>
   );
 };
