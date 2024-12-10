@@ -23,12 +23,12 @@ const HeaderBar = () => {
 </div>
 
 
-  <div className="flex items-center justify-between  pl-3 pr-1  py-[2px] mt-2 mr-4  rounded-lg border place-self-end align-center w-[90px] ">
+  <div className="flex items-center justify-between  pl-3 pr-1  py-[2px] mt-3 mr-5  rounded-lg border place-self-end align-center w-[90px] ">
      <p>English</p>
      <div className="text-[15px]"><TiArrowSortedDown /></div>
   </div>
-  <div class="mt-2">
-  <hr class="border-gray-300 shadow-lg" />
+  <div class="mt-3">
+  <hr class="border-gray-300 shadow-xl" />
 </div>
 
 
