@@ -61,7 +61,7 @@ function App() {
       <HeaderBar />
 
       {/* Chat Section */}
-      <div className="flex-1 overflow-auto p-4">
+      <div className="flex-1 overflow-auto p-4 mt-8">
         {/* Sender Messages */}
         <div className="flex justify-end mb-2">
           <div className="bg-[#f0eaf8] text-black p-3 rounded-tl-3xl rounded-bl-3xl rounded-br-3xl max-w-xs">
