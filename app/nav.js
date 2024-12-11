@@ -149,6 +149,14 @@ function App() {
             </div>
           </div>
         </div>
+        <div className="flex justify-start mb-2">
+          <div className="bg-neutral-200 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+            <p>Sure. Please raise a complaint with the cyber crime cell by tapping <span className="text-[#6A1B9A] font-semibold underline">here</span> or call 1930. Also, do raise a <span className="text-[#6A1B9A] font-semibold underline">complaint with your bank.</span></p>
+            <div className="flex justify-end items-center">
+              <span className="text-xs text-gray-500">{currentTime}</span>
+            </div>
+          </div>
+        </div>
 
         <div className="flex justify-start mb-2">
           <div className="bg-neutral-200 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
@@ -160,7 +168,7 @@ function App() {
         </div>
         <div className="flex justify-start mb-2">
           <div className="bg-neutral-200 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
-            <p>Please know that we cannot cancel or reverse payments. The cyber crime cell may help you get your money back after you raise a complaint.</p>
+            <p>Please know that we cannot cancel or reverse payments. The cyber crime cell may <span className="text-[#6A1B9A] font-semibold underline">help you get your money back</span> after you raise a complaint.</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
             </div>
@@ -168,7 +176,7 @@ function App() {
         </div>
         <div className="flex justify-start mb-2">
           <div className="bg-neutral-200 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
-            <p>We hope this information was helpful</p>
+            <p>We hope this information was helpful. <br/><br/> We have created the ticket {ticketNumber} for you.</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
             </div>
@@ -176,18 +184,11 @@ function App() {
         </div>
 
         {/* Display the dynamic ticket number */}
-        <div className="flex justify-start mb-2">
-          <div className="bg-neutral-200 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
-            <p>We have created the ticket {ticketNumber} for you.</p> {/* Dynamic ticket number */}
-            <div className="flex justify-end items-center">
-              <span className="text-xs text-gray-500">{currentTime}</span>
-            </div>
-          </div>
-        </div>
+  
 
         <div className="flex justify-start mb-2">
           <div className="bg-neutral-200 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
-            <p>You can access this ticket under View Tickets at the top of this screen.</p>
+            <p>You can access this ticket under <span className="font-semibold">View Tickets</span> at the top of this screen.</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
             </div>
