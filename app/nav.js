@@ -17,7 +17,7 @@ const HeaderBar = () => {
           <p className="font-[18px]">VIEW TICKETS</p>
         </div>
       </div>
-<div className="bg-white h-[60px] py-3">
+<div className="bg-white h-[60px] py-3 shadow-md">
   <div className="flex items-center justify-between pl-3 pr-1 py-[2px]  mr-5 rounded-lg border place-self-end align-center w-[90px]">
         <p >English</p>
         <div className="text-[15px]">
