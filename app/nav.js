@@ -158,16 +158,7 @@ function App() {
       </div>
 
       {/* Input Area */}
-      <div className="mt-4 flex items-center">
-        <input
-          type="text"
-          className="border rounded-l-lg px-4 py-2 w-full"
-          placeholder="Type a message"
-        />
-        <button className="bg-[#6A1B9A] text-white rounded-r-lg px-4 py-2">
-          Send
-        </button>
-      </div>
+    
     </div>
   );
 }
