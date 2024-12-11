@@ -4,7 +4,7 @@ import { TiArrowSortedDown } from "react-icons/ti"; // Down arrow icon
 
 const HeaderBar = () => {
   return (
-    <div>
+    <div className="fixed top-0 left-0 right-0 z-10">
       <div className="bg-[#6A1B9A] text-white flex items-center justify-between p-4">
         <div className="flex items-center gap-8 pl-3">
           <div className="text-[20px]">
@@ -17,15 +17,17 @@ const HeaderBar = () => {
           <p className="font-[18px]">VIEW TICKETS</p>
         </div>
       </div>
-
-      <div className="flex items-center justify-between pl-3 pr-1 py-[2px] mt-4 mr-5 rounded-lg border place-self-end align-center w-[90px]">
-        <p>English</p>
+<div className="bg-white h-[60px] py-3">
+  <div className="flex items-center justify-between pl-3 pr-1 py-[2px]  mr-5 rounded-lg border place-self-end align-center w-[90px]">
+        <p >English</p>
         <div className="text-[15px]">
           <TiArrowSortedDown />
         </div>
       </div>
+</div>
+      
 
-      <div className="mt-4 w-full h-[2px] bg-gray-100 shadow-sm"></div>
+    
     </div>
   );
 };
@@ -54,7 +56,7 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col">
+    <div className="min-h-screen bg-gray-100 flex flex-col pt-[80px]">
       {/* Header Bar */}
       <HeaderBar />
 
@@ -136,7 +138,7 @@ function App() {
       </div>
 
       {/* Name Input */}
-      <div className="p-4 mt-7">
+      <div className="p-4">
         <input
           type="text"
           value={name}
