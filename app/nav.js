@@ -17,17 +17,14 @@ const HeaderBar = () => {
           <p className="font-[18px]">VIEW TICKETS</p>
         </div>
       </div>
-<div className="bg-white h-[60px] py-3 shadow-sm">
-  <div className="flex items-center justify-between pl-3 pr-1 py-[2px]  mr-5 rounded-lg border place-self-end align-center w-[90px]">
-        <p >English</p>
-        <div className="text-[15px]">
-          <TiArrowSortedDown />
+      <div className="bg-white h-[60px] py-3 shadow-sm">
+        <div className="flex items-center justify-between pl-3 pr-1 py-[2px] mr-5 rounded-lg border place-self-end align-center w-[90px]">
+          <p>English</p>
+          <div className="text-[15px]">
+            <TiArrowSortedDown />
+          </div>
         </div>
       </div>
-</div>
-      
-
-    
     </div>
   );
 };
@@ -36,6 +33,7 @@ function App() {
   const [currentTime, setCurrentTime] = useState("");
   const [name, setName] = useState("Aneesh Kumar Maury");
   const [account, setAccount] = useState("9345467502@ptyes");
+  const [ticketNumber, setTicketNumber] = useState(""); // State to store random 9-digit number
 
   useEffect(() => {
     // Function to format time to HH:MM AM/PM
@@ -53,7 +51,15 @@ function App() {
     updateCurrentTime();
     const interval = setInterval(updateCurrentTime, 60000); // 60 seconds interval for time update
     return () => clearInterval(interval); // Cleanup on component unmount
+
+    // Generate a random 9-digit ticket number when component mounts
   }, []);
+
+  useEffect(() => {
+    // Generate a random 9-digit ticket number after the component mounts
+    const randomTicketNumber = Math.floor(100000000 + Math.random() * 900000000);
+    setTicketNumber(randomTicketNumber); // Set the generated number to state
+  }, []); // Empty dependency array ensures this runs only once when component mounts
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col pt-[80px]">
@@ -135,6 +141,34 @@ function App() {
             </div>
           </div>
         </div>
+
+        {/* Display the dynamic ticket number */}
+        <div className="flex justify-start mb-2">
+          <div className="bg-neutral-200 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+            <p>We have created the ticket {ticketNumber} for you.</p> {/* Dynamic ticket number */}
+            <div className="flex justify-end items-center">
+              <span className="text-xs text-gray-500">{currentTime}</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-start mb-2">
+          <div className="bg-neutral-200 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+            <p>You can access this ticket under View Tickets at the top of this screen.</p>
+            <div className="flex justify-end items-center">
+              <span className="text-xs text-gray-500">{currentTime}</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-start mb-2">
+          <div className="bg-neutral-200 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+            <p>Do you want to report any other fraud payments?</p>
+            <div className="flex justify-end items-center">
+              <span className="text-xs text-gray-500">{currentTime}</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Name Input */}
@@ -156,9 +190,6 @@ function App() {
           placeholder="Enter account details"
         />
       </div>
-
-      {/* Input Area */}
-    
     </div>
   );
 }
