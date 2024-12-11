@@ -141,6 +141,40 @@ function App() {
             </div>
           </div>
         </div>
+        <div className="flex justify-end mb-2 mt-7">
+          <div className="bg-[#f0eaf8] text-black p-3 rounded-tl-3xl rounded-bl-3xl rounded-br-3xl max-w-xs">
+            <p>No</p>
+            <div className="flex justify-end items-center">
+              <span className="text-xs text-gray-500">{currentTime}</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-start mb-2">
+          <div className="bg-neutral-200 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+            <p>In the meantime, we'll verify your payment details, and block the fraudster's account.</p>
+            <div className="flex justify-end items-center">
+              <span className="text-xs text-gray-500">{currentTime}</span>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-start mb-2">
+          <div className="bg-neutral-200 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+            <p>Please know that we cannot cancel or reverse payments. The cyber crime cell may help you get your money back after you raise a complaint.</p>
+            <div className="flex justify-end items-center">
+              <span className="text-xs text-gray-500">{currentTime}</span>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-start mb-2">
+          <div className="bg-neutral-200 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+            <p>We hope this information was helpful</p>
+            <div className="flex justify-end items-center">
+              <span className="text-xs text-gray-500">{currentTime}</span>
+            </div>
+          </div>
+        </div>
+        
 
         {/* Display the dynamic ticket number */}
         <div className="flex justify-start mb-2">
