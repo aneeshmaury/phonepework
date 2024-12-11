@@ -32,6 +32,8 @@ const HeaderBar = () => {
 
 function App() {
   const [currentTime, setCurrentTime] = useState("");
+  const [name, setName] = useState("Aneesh Kumar Maury");
+  const [account, setAccount] = useState("9345467502@ptyes");
 
   useEffect(() => {
     // Function to format time to HH:MM AM/PM
@@ -60,7 +62,7 @@ function App() {
       <div className="flex-1 overflow-auto p-4">
         {/* Sender Messages */}
         <div className="flex justify-end mb-2">
-          <div className="bg-[#f0eaf8]  text-black p-3 rounded-tl-3xl rounded-bl-3xl rounded-br-3xl max-w-xs">
+          <div className="bg-[#f0eaf8] text-black p-3 rounded-tl-3xl rounded-bl-3xl rounded-br-3xl max-w-xs">
             <p>Made a payment to a fraudster for another reason</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
@@ -70,7 +72,7 @@ function App() {
 
         {/* Receiver Messages */}
         <div className="flex justify-start mb-2">
-          <div className="bg-neutral-200	 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+          <div className="bg-neutral-200 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
             <p>Please enter the text below</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
@@ -80,7 +82,7 @@ function App() {
 
         <div className="flex justify-end mb-2">
           <div className="bg-[#f0eaf8] text-black p-3 rounded-tl-3xl rounded-bl-3xl rounded-br-3xl max-w-xs">
-            <p>9345467502@ptyes</p>
+            <p>{account}</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
             </div>
@@ -88,8 +90,8 @@ function App() {
         </div>
 
         <div className="flex justify-start mb-2">
-          <div className="bg-neutral-200	  text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
-            <p>I understand how upsetting it is to lose your money, Aneesh Kumar Maury.</p>
+          <div className="bg-neutral-200 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+            <p>I understand how upsetting it is to lose your money, {name}.</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
             </div>
@@ -97,7 +99,7 @@ function App() {
         </div>
 
         <div className="flex justify-start mb-2">
-          <div className="bg-neutral-200	 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+          <div className="bg-neutral-200 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
             <p>As a security measure, we&apos;ll first verify your payment details and block the account to which you&apos;ve made this payment.</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
@@ -113,14 +115,16 @@ function App() {
             </div>
           </div>
         </div>
+
         <div className="flex justify-start mb-2">
-          <div className="bg-neutral-200  text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+          <div className="bg-neutral-200 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
             <p>Could you please tell me how the fraudster contacted you?</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
             </div>
           </div>
         </div>
+
         <div className="flex justify-end mb-2">
           <div className="bg-[#f0eaf8] text-black p-3 rounded-tl-3xl rounded-bl-3xl rounded-br-3xl max-w-xs">
             <p>I received a link or notification</p>
@@ -129,6 +133,26 @@ function App() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Name Input */}
+      <div className="p-4 mt-7">
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          placeholder="Enter your name"
+        />
+      </div>
+
+      {/* Account Input */}
+      <div className="p-4">
+        <input
+          type="text"
+          value={account}
+          onChange={(e) => setAccount(e.target.value)}
+          placeholder="Enter account details"
+        />
       </div>
 
       {/* Input Area */}
