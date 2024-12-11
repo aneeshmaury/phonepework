@@ -113,6 +113,22 @@ function App() {
             </div>
           </div>
         </div>
+        <div className="flex justify-start mb-2">
+          <div className="bg-neutral-200  text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+            <p>Could you please tell me how the fraudster contacted you?</p>
+            <div className="flex justify-end items-center">
+              <span className="text-xs text-gray-500">{currentTime}</span>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-end mb-2">
+          <div className="bg-[#f0eaf8] text-black p-3 rounded-tl-3xl rounded-bl-3xl rounded-br-3xl max-w-xs">
+            <p>I received a link or notification</p>
+            <div className="flex justify-end items-center">
+              <span className="text-xs text-gray-500">{currentTime}</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Input Area */}
