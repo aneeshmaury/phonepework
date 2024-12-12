@@ -141,7 +141,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="flex justify-end mb-2 mt-7">
+        <div className="flex justify-end mb-2 mt-14">
           <div className="bg-[#f0eaf8] text-black p-3 rounded-tl-3xl rounded-bl-3xl rounded-br-3xl max-w-xs">
             <p>No</p>
             <div className="flex justify-end items-center">
