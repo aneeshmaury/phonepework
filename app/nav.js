@@ -31,8 +31,8 @@ const HeaderBar = () => {
 
 function App() {
   const [currentTime, setCurrentTime] = useState("");
-  const [name, setName] = useState("Aneesh Kumar Maury");
-  const [account, setAccount] = useState("9345467502@ptyes");
+  const [name, setName] = useState("");
+  const [account, setAccount] = useState("");
   const [ticketNumber, setTicketNumber] = useState(""); // State to store random 9-digit number
 
   useEffect(() => {
