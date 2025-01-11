@@ -32,8 +32,8 @@ const HeaderBar = () => {
 
 function App() {
   const [currentTime, setCurrentTime] = useState("");
-  const [name, setName] = useState("Enter Your Name");
-  const [account, setAccount] = useState("Enter UPI Id");
+  const [name, setName] = useState("");
+  const [account, setAccount] = useState("");
   const [ticketNumber, setTicketNumber] = useState(""); // State to store random 9-digit number
 
   useEffect(() => {
@@ -226,8 +226,13 @@ function App() {
         />
         
       </div>
-
-      <AdBanner/>
+<div className="mt-[-300px]">
+  <AdBanner/>
+  <AdBanner/>
+  <AdBanner/>
+  
+  </div>
+      
     </div>
   );
 }
