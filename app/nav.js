@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowLeft } from "react-icons/fa"; // Left arrow icon
 import { TiArrowSortedDown } from "react-icons/ti"; // Down arrow icon
+import AdBanner from "./add";
 
 const HeaderBar = () => {
   return (
@@ -224,6 +225,8 @@ function App() {
           placeholder="Enter account details"
         />
       </div>
+
+      <AdBanner/>
     </div>
   );
 }
