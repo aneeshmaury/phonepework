@@ -224,9 +224,10 @@ function App() {
           onChange={(e) => setAccount(e.target.value)}
           placeholder="Enter account details"
         />
+        <AdBanner/>
       </div>
 
-      <AdBanner/>
+      
     </div>
   );
 }
