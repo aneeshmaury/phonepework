@@ -63,6 +63,7 @@ function App() {
   }, []); // Empty dependency array ensures this runs only once when component mounts
 
   return (
+    <div>
     <div className="min-h-screen bg-gray-100 flex flex-col pt-[80px]">
       {/* Header Bar */}
       <HeaderBar />
@@ -226,14 +227,12 @@ function App() {
         />
         
       </div>
-<div className="mt-[-300px]">
-  <AdBanner/>
-  <AdBanner/>
-  <AdBanner/>
   
-  </div>
-      
     </div>
+    <div className="mt-[-300px]"> <AdBanner/></div>
+   
+    </div>
+    
   );
 }
 
