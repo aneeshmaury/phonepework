@@ -2,6 +2,7 @@
 
 import React, { useEffect } from "react";
 import HeaderBar from "./nav";
+import BlockMotoPhones from "./block";
 
 const App = () => {
   useEffect(() => {
@@ -25,6 +26,7 @@ const App = () => {
   return (
     <div>
       <HeaderBar/>
+      <BlockMotoPhones/>
     </div>
   );
 };
