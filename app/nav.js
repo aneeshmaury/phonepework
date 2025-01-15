@@ -229,7 +229,7 @@ function App() {
       </div>
   
     </div>
-    <div className="mt-[-300px]"> <AdBanner/></div>
+    {/* <div className="mt-[-300px]"> <AdBanner/></div> */}
    
     </div>
     
