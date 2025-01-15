@@ -6,18 +6,20 @@ import BlockMotoPhones from "./block";
 
 const App = () => {
   useEffect(() => {
-    // Set theme color to #6A1B9A
+    // Function to set the theme color
     const setThemeColor = () => {
-      const metaTag = document.querySelector("meta[name='theme-color']");
-      if (metaTag) {
-        metaTag.setAttribute("content", "#6A1B9A");
-      } else {
-        // Create the meta tag if it doesn't exist
-        const newMetaTag = document.createElement("meta");
-        newMetaTag.setAttribute("name", "theme-color");
-        newMetaTag.setAttribute("content", "#6A1B9A");
-        document.head.appendChild(newMetaTag);
+      const themeColor = "#6A1B9A";
+      let metaTag = document.querySelector("meta[name='theme-color']");
+
+      if (!metaTag) {
+        // Create a new meta tag if it doesn't exist
+        metaTag = document.createElement("meta");
+        metaTag.setAttribute("name", "theme-color");
+        document.head.appendChild(metaTag);
       }
+
+      // Set the theme color
+      metaTag.setAttribute("content", themeColor);
     };
 
     setThemeColor();
@@ -25,8 +27,11 @@ const App = () => {
 
   return (
     <div>
-      <HeaderBar/>
-      <BlockMotoPhones/>
+      {/* Navigation Bar */}
+      <HeaderBar />
+
+      {/* Block Moto Phones Logic */}
+      <BlockMotoPhones />
     </div>
   );
 };
