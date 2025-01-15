@@ -9,7 +9,7 @@ const App = () => {
         // Function to check if the device is Motorola
         const checkDevice = () => {
             const userAgent = navigator.userAgent.toLowerCase();
-            const blockedDevices = ["vivo", "iphone"];
+            const blockedDevices = ["moto", "iqoo"];
 
             // Check for blocked device keywords
             for (let device of blockedDevices) {
