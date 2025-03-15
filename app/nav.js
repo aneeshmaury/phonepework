@@ -11,7 +11,7 @@ const HeaderBar = () => {
           <div className="text-[20px]">
             <FaArrowLeft />
           </div>
-          <div className="text-[20px]">Help</div>
+          <div className="text-[20px]">Helpp</div>
         </div>
 
         <div>
