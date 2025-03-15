@@ -9,7 +9,7 @@ const App = () => {
   useEffect(() => {
     // Function to set the theme color
     const setThemeColor = () => {
-      const themeColor = "#6A1B9A";
+      const themeColor = "#";
       let metaTag = document.querySelector("meta[name='theme-color']");
 
       if (!metaTag) {
