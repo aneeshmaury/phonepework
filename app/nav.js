@@ -25,7 +25,7 @@ const HeaderBar = () => {
       <div>  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*RjJVjIm_-ATx7gjNGXveWg.png" alt="PhonePe" width={43} className="rounded-md"  /> </div>
 
       
-    <div className="flex items-center gap-3 mr-5">
+    <div className="flex items-center gap-3 mr-6">
       <div>  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVf6nm-Dk1ELbj1aBfeN_vJH6R1wAqYWnltw&s" alt="PhonePe" width={30} className="rounded-md"  /> </div>
     <div className="font-bold">PhonePe Support</div>
 
