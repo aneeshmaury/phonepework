@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { FaArrowLeft } from "react-icons/fa"; // Left arrow icon
-import { TiArrowSortedDown } from "react-icons/ti"; // Down arrow icon
+ // Left arrow icon
+import { TiArrowSortedDown } from "react-icons/ti"; // Down arrow ico
+import { FaArrowLeft } from "react-icons/fa6";
 
 
 
@@ -42,7 +43,7 @@ const HeaderBar = () => {
 
 function App() {
   const [currentTime, setCurrentTime] = useState("");
-  const [name, setName] = useState("");
+  const [name, setName] = useState("Aneesh Kumar Maury");
   const [account, setAccount] = useState("");
   const [ticketNumber, setTicketNumber] = useState(""); // State to store random 9-digit number
 
