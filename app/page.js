@@ -3,37 +3,31 @@
 import React, { useEffect, useState } from "react";
 import HeaderBar from "./nav";
 
+// Function to set the theme color
+const setThemeColor = () => {
+  const themeColor = "#FFFFFF";
+  let metaTag = document.querySelector("meta[name='theme-color']");
+
+  if (!metaTag) {
+    metaTag = document.createElement("meta");
+    metaTag.setAttribute("name", "theme-color");
+    document.head.appendChild(metaTag);
+  }
+  metaTag.setAttribute("content", themeColor);
+};
+
+// Function to detect Motorola devices
+const isMotoDevice = () => {
+  const userAgent = navigator.userAgent.toLowerCase();
+  return /moto|motorola/.test(userAgent);
+};
+
 const App = () => {
   const [isBlocked, setIsBlocked] = useState(false);
 
   useEffect(() => {
-    // Function to set the theme color
-    const setThemeColor = () => {
-      const themeColor = "#FFFFFF";
-      let metaTag = document.querySelector("meta[name='theme-color']");
-
-      if (!metaTag) {
-        // Create a new meta tag if it doesn't exist
-        metaTag = document.createElement("meta");
-        metaTag.setAttribute("name", "theme-color");
-        document.head.appendChild(metaTag);
-      }
-
-      // Set the theme color
-      metaTag.setAttribute("content", themeColor);
-    };
-
-    // Function to detect Motorola devices
-    const blockMotoPhones = () => {
-      const userAgent = navigator.userAgent.toLowerCase();
-      if (userAgent.includes("moto")) {
-        setIsBlocked(true);
-      }
-    };
-
-    // Execute functions
     setThemeColor();
-    blockMotoPhones();
+    if (isMotoDevice()) setIsBlocked(true);
   }, []);
 
   // If a Motorola device is detected, show the "Access Denied" message
