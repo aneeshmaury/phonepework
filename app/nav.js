@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
  // Left arrow icon
 import { TiArrowSortedDown } from "react-icons/ti"; // Down arrow ico
-import { FaArrowLeftLong } from "react-icons/fa6";
+import { FaArrowLeft } from "react-icons/fa6";
 
 
 
@@ -23,7 +23,9 @@ const HeaderBar = () => {
       </div> */}
       <div className="  flex items-center justify-between bg-white h-[60px] py-3 px-2 shadow-sm">
     
-      <div className="pl-2"><FaArrowLeftLong /></div>
+      <div className="pl-2 text-[20px]">
+  <FaArrowLeft style={{ strokeWidth: 0.5 }} />
+</div>
     <div className="flex items-center gap-3 mr-5">
       <div>  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVf6nm-Dk1ELbj1aBfeN_vJH6R1wAqYWnltw&s" alt="PhonePe" width={30} className="rounded-md"  /> </div>
     <div className="font-bold">PhonePe Support</div>
