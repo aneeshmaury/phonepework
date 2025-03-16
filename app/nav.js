@@ -8,24 +8,28 @@ import { TiArrowSortedDown } from "react-icons/ti"; // Down arrow icon
 const HeaderBar = () => {
   return (
     <div className="fixed top-0 left-0 right-0 z-10">
-      <div className="bg-[#6A1B9A] text-white flex items-center justify-between p-4">
+      {/* <div className="bg-[#6A1B9A] text-white flex items-center justify-between p-4">
         <div className="flex items-center gap-8 pl-3">
           <div className="text-[20px]">
             <FaArrowLeft />
           </div>
-          <div className="text-[20px]">PhonePe Support</div>
+          <div className="text-[22px]">PhonePe Support</div>
         </div>
 
         <div>
           <p className="font-[18px]">VIEW TICKETS</p>
         </div>
-      </div>
-      <div className="  flex items-center justify-between bg-white h-[60px] shadow-sm">
-      <div className="font-bold "><FaArrowLeft /></div>
-    <div>  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVf6nm-Dk1ELbj1aBfeN_vJH6R1wAqYWnltw&s" alt="PhonePe" width={30} className="rounded-md"  /> </div>
+      </div> */}
+      <div className="  flex items-center justify-between bg-white h-[60px] py-3 px-2 shadow-sm">
+    
+      <div className="pl-2"><FaArrowLeft /></div>
+    <div className="flex items-center gap-3 mr-5">
+      <div>  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVf6nm-Dk1ELbj1aBfeN_vJH6R1wAqYWnltw&s" alt="PhonePe" width={30} className="rounded-md"  /> </div>
     <div className="font-bold">PhonePe Support</div>
 
-        <div className="flex items-center justify-between pl-3 pr-1 py-[2px] mr-5 rounded-lg border place-self-end align-center w-[90px]">
+    </div>
+    
+        <div className="flex items-center justify-between pl-3 pr-1 py-[2px] mr-3 rounded-lg border place-self-end align-center w-[90px]">
           <p>English</p>
           <div className="text-[15px]">
             <TiArrowSortedDown />
