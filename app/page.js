@@ -3,9 +3,9 @@
 import React, { useEffect, useState } from "react";
 import HeaderBar from "./nav";
 
-// Function to set the theme color
+// Function to set the theme color to Pink
 const setThemeColor = () => {
-  const themeColor = "#FFFFFF";
+  const themeColor = "#FF69B4"; // Pink Color (HotPink)
   let metaTag = document.querySelector("meta[name='theme-color']");
 
   if (!metaTag) {
