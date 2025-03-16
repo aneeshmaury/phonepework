@@ -22,7 +22,7 @@ const HeaderBar = () => {
         </div>
       </div> */}
       <div className="  flex items-center justify-between bg-white h-[60px] py-3 px-2 shadow-sm">
-      <div>  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*RjJVjIm_-ATx7gjNGXveWg.png" alt="PhonePe" width={50} className="rounded-md"  /> </div>
+      <div>  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*RjJVjIm_-ATx7gjNGXveWg.png" alt="PhonePe" width={43} className="rounded-md"  /> </div>
 
       
     <div className="flex items-center gap-3 mr-5">
