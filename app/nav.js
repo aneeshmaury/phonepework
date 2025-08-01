@@ -204,7 +204,7 @@ function App() {
         <div className="flex justify-start mb-2">
           <div className="bg-gray-100 w-[250px]  text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
             
-            <p> We hope this information was helpful. <br/> <br/> We&apos;ve created the ticket {ticketNumber} for you. To view it, Tap? on the top right corner of your app&apos;s home screen and then tap My Tickets.</p>
+            <p> We hope this information was helpful. <br/> <br/> We&apos;ve created the ticket {ticketNumber} for you. To view it, Tap? on the top right corner of your app&apos;s home screen and then tap <span className="font-semibold"> My Tickets</span>.</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
             </div>
