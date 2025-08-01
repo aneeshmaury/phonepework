@@ -165,7 +165,7 @@ function App() {
         </div>
         <div className="flex justify-start mb-2">
           <div className="bg-neutral-200 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
-            <p>Sure. Please raise a complaint with the cyber crime cell by tapping <span className="text-[#6A1B9A] font-semibold underline">here</span> or call 1930. Also, do raise a <span className="text-[#6A1B9A] font-semibold underline">complaint with your bank.</span></p>
+            <p>Sure. While we cannot cancel or reverse payments, we'll check this for you and take necessary action.</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
             </div>
@@ -174,7 +174,7 @@ function App() {
 
         <div className="flex justify-start mb-2">
           <div className="bg-neutral-200 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
-            <p>In the meantime, we&apos;ll verify your payment details, and block the fraudster&apos;s account.</p>
+            <p>The cybercrime cell may be able to help you get your money back after you raise a complaint with them. Tap <span className="text-blue-900 font-bold">here</span> or call 1930 to do so.</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
             </div>
