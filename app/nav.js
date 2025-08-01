@@ -147,7 +147,7 @@ function App() {
         </div>
 
         <div className="flex justify-start mb-2">
-          <div className="bg-neutral-200 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+          <div className="bg-gray-100 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
             <p>Could you please tell me how the fraudster contacted you?</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
@@ -173,7 +173,7 @@ function App() {
         </div>
         <div className="flex justify-start mb-2">
           <div className="bg-gray-100 w-[250px] text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
-            <p>Sure. While we cannot cancel or reverse payments, we'll check this for you and take necessary action.</p>
+            <p>Sure. While we cannot cancel or reverse payments, We&apos;ll check this for you and take necessary action.</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
             </div>
@@ -203,7 +203,7 @@ function App() {
 
         <div className="flex justify-start mb-2">
           <div className="bg-gray-100 w-[250px]  text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
-            <p>We've created the ticket {ticketNumber}  for you. To view it, Tap? on the top right corner of your app's home screen and then tap My Tickets.</p>
+            <p>We&apos;ve created the ticket {ticketNumber} for you. To view it, Tap? on the top right corner of your app&apos;s home screen and then tap My Tickets.</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
             </div>
