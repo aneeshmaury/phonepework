@@ -80,7 +80,7 @@ function App() {
       {/* Chat Section */}
       <div className="flex-1 overflow-auto p-4 mt-8">
         {/* Sender Messages */}
-         <div className="flex justify-start mb-2 ">
+         <div className="flex justify-start mb-2  ">
           <div className="bg-gray-100 w-[250px]  text-black p-3 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl max-w-xs">
             <p>Please help me understand why you made a payment to a fraudster.</p>
             <div className="flex justify-end items-center">
