@@ -3,9 +3,6 @@ import React, { useEffect, useState } from "react";
 import { TiArrowSortedDown } from "react-icons/ti"; // Down arrow ico
 import { FaArrowLeft } from "react-icons/fa6";
 
-
-
-
 const HeaderBar = () => {
   return (
     <div className="fixed top-0 left-0 right-0 z-10">
@@ -83,8 +80,8 @@ function App() {
       {/* Chat Section */}
       <div className="flex-1 overflow-auto p-4 mt-8">
         {/* Sender Messages */}
-         <div className="flex justify-start mb-2">
-          <div className="bg-gray-100 w-[250px]  text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+         <div className="flex justify-start mb-2 ">
+          <div className="bg-gray-100 w-[250px]  text-black p-3 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl max-w-xs">
             <p>Please help me understand why you made a payment to a fraudster.</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
@@ -92,7 +89,7 @@ function App() {
           </div>
         </div>
         <div className="flex justify-end mb-2">
-          <div className="bg-[#f0eaf8] w-[250px] text-black p-3 rounded-tl-3xl rounded-bl-3xl rounded-br-3xl max-w-xs">
+          <div className="bg-[#f0eaf8] w-[250px] text-black p-3 rounded-tl-2xl rounded-bl-2xl rounded-br-2xl max-w-xs">
             <p>Made a payment to a fraudster for another reason</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
@@ -102,7 +99,7 @@ function App() {
 
         {/* Receiver Messages */}
         <div className="flex justify-start mb-2">
-          <div className="bg-gray-100 text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+          <div className="bg-gray-100 text-black p-3 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl max-w-xs">
             <p>Please enter the text below</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
@@ -111,7 +108,7 @@ function App() {
         </div>
 
         <div className="flex justify-end mb-2">
-          <div className="bg-[#f0eaf8] text-black p-3 rounded-tl-3xl rounded-bl-3xl rounded-br-3xl max-w-xs">
+          <div className="bg-[#f0eaf8] text-black p-3 rounded-tl-2xl rounded-bl-2xl rounded-br-2xl max-w-xs">
             <p>{account}</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
@@ -120,7 +117,7 @@ function App() {
         </div>
 
         <div className="flex justify-start mb-2">
-          <div className="bg-gray-100 w-[280px] text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+          <div className="bg-gray-100 w-[280px] text-black p-3 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl max-w-xs">
             <p>I understand how upsetting it is to lose your money, {name}.</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
@@ -129,7 +126,7 @@ function App() {
         </div>
 
         <div className="flex justify-start mb-2">
-          <div className="bg-gray-100 w-[280px] text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+          <div className="bg-gray-100 w-[280px] text-black p-3 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl max-w-xs">
             <p>As a security measure, we&apos;ll first verify your payment details and block the account to which you&apos;ve made this payment.</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
@@ -138,7 +135,7 @@ function App() {
         </div>
 
         <div className="flex justify-end mb-2">
-          <div className="bg-[#f0eaf8] text-black p-3 rounded-tl-3xl rounded-bl-3xl rounded-br-3xl max-w-xs">
+          <div className="bg-[#f0eaf8] text-black p-3 rounded-tl-2xl rounded-bl-2xl rounded-br-2xl max-w-xs">
             <p>Yes, block the fraudster&apos;s account.</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
@@ -147,7 +144,7 @@ function App() {
         </div>
 
         <div className="flex justify-start mb-2">
-          <div className="bg-gray-100 w-[280px] text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+          <div className="bg-gray-100 w-[280px] text-black p-3 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl max-w-xs">
             <p>Could you please tell me how the fraudster contacted you?</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
@@ -156,7 +153,7 @@ function App() {
         </div>
 
         <div className="flex justify-end mb-2">
-          <div className="bg-[#f0eaf8] text-black p-3 rounded-tl-3xl rounded-bl-3xl rounded-br-3xl max-w-xs">
+          <div className="bg-[#f0eaf8] text-black p-3 rounded-tl-2xl rounded-bl-2xl rounded-br-2xl max-w-xs">
             <p>I received a link or notification</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
@@ -164,7 +161,7 @@ function App() {
           </div>
         </div>
         <div className="flex justify-end mb-2 mt-32">
-          <div className="bg-[#f0eaf8] text-black p-3 rounded-tl-3xl rounded-bl-3xl rounded-br-3xl max-w-xs">
+          <div className="bg-[#f0eaf8] text-black p-3 rounded-tl-2xl rounded-bl-2xl rounded-br-2xl max-w-xs">
             <p>No</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
@@ -172,7 +169,7 @@ function App() {
           </div>
         </div>
         <div className="flex justify-start mb-2">
-          <div className="bg-gray-100 w-[250px] text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+          <div className="bg-gray-100 w-[250px] text-black p-3 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl max-w-xs">
             <p>Sure. While we cannot cancel or reverse payments, We&apos;ll check this for you and take necessary action.</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
@@ -181,7 +178,7 @@ function App() {
         </div>
 
         <div className="flex justify-start mb-2">
-          <div className="bg-gray-100 w-[250px]  text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+          <div className="bg-gray-100 w-[250px]  text-black p-3 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl max-w-xs">
             <p>The cybercrime cell may be able to help you get your money back after you raise a complaint with them. Tap <span className="text-[#6A1B9A] font-semibold">here</span> or call 1930 to do so.</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
@@ -190,7 +187,7 @@ function App() {
         </div>
    
         <div className="flex justify-start mb-2">
-          <div className="bg-gray-100 w-[250px]  text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+          <div className="bg-gray-100 w-[250px]  text-black p-3 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl max-w-xs">
             <p>You can also raise a <span className="text-[#6A1B9A] font-semibold ">complaint with your bank.</span> </p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
@@ -202,7 +199,7 @@ function App() {
   
 
         <div className="flex justify-start mb-2">
-          <div className="bg-gray-100 w-[250px]  text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+          <div className="bg-gray-100 w-[250px]  text-black p-3 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl max-w-xs">
             
             <p> We hope this information was helpful. <br/> <br/> We&apos;ve created the ticket {ticketNumber} for you. To view it, Tap? on the top right corner of your app&apos;s home screen and then tap <span className="font-semibold"> My Tickets</span>.</p>
             <div className="flex justify-end items-center">
@@ -212,7 +209,7 @@ function App() {
         </div>
 
         <div className="flex justify-start mb-2">
-          <div className="bg-gray-100 w-[250px]  text-black p-3 rounded-tr-3xl rounded-br-3xl rounded-bl-3xl max-w-xs">
+          <div className="bg-gray-100 w-[250px]  text-black p-3 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl max-w-xs">
             <p>Do you want to report any other fraud payments?</p>
             <div className="flex justify-end items-center">
               <span className="text-xs text-gray-500">{currentTime}</span>
