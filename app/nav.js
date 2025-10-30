@@ -151,17 +151,7 @@ function App() {
           </div>
         </div>
 
-<div className="mt-19 mb-19">...........</div>
-         <div className="flex justify-end">
-          <div className="bg-[#f0eaf8] p-3  rounded-2xl max-w-xs text-black">
-            <p>No</p>
-            <div className="flex justify-end">
-              <span className="text-xs text-gray-500">{currentTime}</span>
-            </div>
-          </div>
-        </div>
- 
-        <div className="flex justify-start">
+<div className="flex justify-start">
           <div className="bg-gray-100 p-3 rounded-2xl max-w-xs text-black">
             <p>
               Sure. While we cannot cancel or reverse payments, we&apos;ll check this
@@ -172,6 +162,16 @@ function App() {
             </div>
           </div>
         </div>
+         <div className="flex justify-end">
+          <div className="bg-[#f0eaf8] p-3  rounded-2xl max-w-xs text-black">
+            <p>No</p>
+            <div className="flex justify-end">
+              <span className="text-xs text-gray-500">{currentTime}</span>
+            </div>
+          </div>
+        </div>
+ 
+        
 
         <div className="flex justify-start">
           <div className="bg-gray-100 p-3 rounded-2xl max-w-xs text-black">
