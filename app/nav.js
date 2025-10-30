@@ -171,7 +171,17 @@ function App() {
           </div>
         </div>
  
-        
+        <div className="flex justify-start">
+          <div className="bg-gray-100 p-3 rounded-2xl max-w-xs text-black">
+            <p>
+              Sure. While we cannot cancel or reverse payments, we&apos;ll check this
+              for you and take necessary action.
+            </p>
+            <div className="flex justify-end">
+              <span className="text-xs text-gray-500">{currentTime}</span>
+            </div>
+          </div>
+        </div>
 
         <div className="flex justify-start">
           <div className="bg-gray-100 p-3 rounded-2xl max-w-xs text-black">
