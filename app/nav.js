@@ -30,7 +30,7 @@ const HeaderBar = () => {
 
 function App() {
   const [currentTime, setCurrentTime] = useState("");
-  const [name, setName] = useState("Aneesh Kumar Maury");
+  const [name, setName] = useState("");
   const [account, setAccount] = useState("");
   const [ticketNumber, setTicketNumber] = useState("");
 
@@ -215,9 +215,11 @@ function App() {
         {/* Ticket Info */}
         <div className="flex justify-start">
           <div className="bg-gray-100 p-3 rounded-2xl max-w-xs text-black">
+            <p>We hope this information was helpful</p>
+            <br/>
             <p>
               We&apos;ve created the ticket <b>{ticketNumber}</b> for you.  
-              To view it, tap on the top right corner of your app&apos;s home screen and
+              To view it, Tap ? on the top right corner of your app&apos;s home screen and
               then tap <span className="font-semibold">My Tickets</span>.
             </p>
             <div className="flex justify-end">
@@ -237,7 +239,7 @@ function App() {
       </div>
 
       {/* Input Fields */}
-      <div className="p-4 space-y-3">
+      <div className="p-4 space-y-3 mt-5">
         <input
           className="border border-gray-300 rounded-md p-2 w-full"
           type="text"
