@@ -1,36 +1,27 @@
 import React, { useEffect, useState } from "react";
- // Left arrow icon
-import { TiArrowSortedDown } from "react-icons/ti"; // Down arrow ico
-import { FaArrowLeft } from "react-icons/fa6";
+import { TiArrowSortedDown } from "react-icons/ti";
+import { FaArrowLeft } from "react-icons/fa";
 
 const HeaderBar = () => {
   return (
-    <div className="fixed top-0 left-0 right-0 z-10">
-      {/* <div className="bg-[#6A1B9A] text-white flex items-center justify-between p-4">
-        <div className="flex items-center gap-8 pl-3">
-          <div className="text-[20px]">
-            <FaArrowLeft />
+    <div className="fixed top-0 left-0 right-0 z-10 bg-white shadow-sm">
+      <div className="flex items-center justify-between h-[60px] px-4">
+        <div className="flex items-center gap-3">
+          <FaArrowLeft className="text-gray-700 text-lg" />
+          <img
+            src="https://s3-alpha.figma.com/hub/file/2736691733/resized/1200x720/3e8b77fb-3995-4701-bb49-a72b7f2746e1-cover.png"
+            alt="PhonePe"
+            width={40}
+            className="rounded-md"
+          />
+          <div className="font-semibold text-gray-800 text-lg">
+            PhonePe Support
           </div>
-          <div className="text-[22px]">PhonePe Support</div>
         </div>
 
-        <div>
-          <p className="font-[18px]">VIEW TICKETS</p>
-        </div>
-      </div> */}
-      
-      
-    <div className="flex items-center gap-3 mr-6">
-      <div>  <img src="https://s3-alpha.figma.com/hub/file/2736691733/resized/1200x720/3e8b77fb-3995-4701-bb49-a72b7f2746e1-cover.png" alt="PhonePe" width={30} className="rounded-md"  /> </div>
-    <div className="font-bold">PhonePe Support</div>
-
-    </div>
-    
-        <div className="flex items-center justify-between pl-3 pr-1 py-[2px] mr-3 rounded-lg border place-self-end align-center w-[90px]">
+        <div className="flex items-center gap-1 border rounded-lg px-2 py-[2px] w-[90px] justify-between">
           <p>English</p>
-          <div className="text-[15px]">
-            <TiArrowSortedDown />
-          </div>
+          <TiArrowSortedDown />
         </div>
       </div>
     </div>
@@ -41,207 +32,208 @@ function App() {
   const [currentTime, setCurrentTime] = useState("");
   const [name, setName] = useState("Aneesh Kumar Maury");
   const [account, setAccount] = useState("");
-  const [ticketNumber, setTicketNumber] = useState(""); // State to store random 9-digit number
+  const [ticketNumber, setTicketNumber] = useState("");
 
+  // Update current time every minute
   useEffect(() => {
-    // Function to format time to HH:MM AM/PM
-    const updateCurrentTime = () => {
+    const updateTime = () => {
       const now = new Date();
-      const time = now.toLocaleTimeString([], {
-        hour: "2-digit",
-        minute: "2-digit",
-        hour12: true,
-      });
-      setCurrentTime(time);
+      setCurrentTime(
+        now.toLocaleTimeString([], {
+          hour: "2-digit",
+          minute: "2-digit",
+          hour12: true,
+        })
+      );
     };
-
-    // Update time immediately and every minute after
-    updateCurrentTime();
-    const interval = setInterval(updateCurrentTime, 60000); // 60 seconds interval for time update
-    return () => clearInterval(interval); // Cleanup on component unmount
-
-    // Generate a random 9-digit ticket number when component mounts
+    updateTime();
+    const interval = setInterval(updateTime, 60000);
+    return () => clearInterval(interval);
   }, []);
 
+  // Generate random 9-digit ticket number
   useEffect(() => {
-    // Generate a random 9-digit ticket number after the component mounts
-    const randomTicketNumber = Math.floor(100000000 + Math.random() * 900000000);
-    setTicketNumber(randomTicketNumber); // Set the generated number to state
-  }, []); // Empty dependency array ensures this runs only once when component mounts
+    const randomNum = Math.floor(100000000 + Math.random() * 900000000);
+    setTicketNumber(randomNum);
+  }, []);
 
   return (
-    <div>
-    <div className="min-h-screen  flex flex-col pt-[80px]">
-      {/* Header Bar */}
+    <div className="min-h-screen flex flex-col pt-[80px] bg-gray-50">
+      {/* Header */}
       <HeaderBar />
 
       {/* Chat Section */}
-      <div className="flex-1 overflow-auto p-4 mt-8">
-        {/* Sender Messages */}
-         <div className="flex justify-start mb-2  ">
-          <div className="bg-gray-100 w-[250px]  text-black p-3 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl max-w-xs">
+      <div className="flex-1 overflow-auto p-4 mt-8 space-y-3">
+        {/* Incoming Message */}
+        <div className="flex justify-start">
+          <div className="bg-gray-100 p-3 rounded-2xl max-w-xs text-black">
             <p>Please help me understand why you made a payment to a fraudster.</p>
-            <div className="flex justify-end items-center">
-              <span className="text-xs text-gray-500">{currentTime}</span>
-            </div>
-          </div>
-        </div>
-        <div className="flex justify-end mb-2">
-          <div className="bg-[#f0eaf8] w-[250px] text-black p-3 rounded-tl-2xl rounded-bl-2xl rounded-br-2xl max-w-xs">
-            <p>Made a payment to a fraudster for another reason</p>
-            <div className="flex justify-end items-center">
+            <div className="flex justify-end">
               <span className="text-xs text-gray-500">{currentTime}</span>
             </div>
           </div>
         </div>
 
-        {/* Receiver Messages */}
-        <div className="flex justify-start mb-2">
-          <div className="bg-gray-100 text-black p-3 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl max-w-xs">
-            <p>Please enter the text below</p>
-            <div className="flex justify-end items-center">
+        {/* Outgoing Message */}
+        <div className="flex justify-end">
+          <div className="bg-[#f0eaf8] p-3 rounded-2xl max-w-xs text-black">
+            <p>Made a payment to a fraudster for another reason.</p>
+            <div className="flex justify-end">
               <span className="text-xs text-gray-500">{currentTime}</span>
             </div>
           </div>
         </div>
 
-        <div className="flex justify-end mb-2">
-          <div className="bg-[#f0eaf8] text-black p-3 rounded-tl-2xl rounded-bl-2xl rounded-br-2xl max-w-xs">
-            <p>{account}</p>
-            <div className="flex justify-end items-center">
-              <span className="text-xs text-gray-500">{currentTime}</span >
+        {/* Additional Conversation */}
+        <div className="flex justify-start">
+          <div className="bg-gray-100 p-3 rounded-2xl max-w-xs text-black">
+            <p>Please enter the text below.</p>
+            <div className="flex justify-end">
+              <span className="text-xs text-gray-500">{currentTime}</span>
             </div>
           </div>
         </div>
 
-        <div className="flex justify-start mb-2">
-          <div className="bg-gray-100 w-[280px] text-black p-3 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl max-w-xs">
+        <div className="flex justify-end">
+          <div className="bg-[#f0eaf8] p-3 rounded-2xl max-w-xs text-black">
+            <p>{account ? account : "Account details here..."}</p>
+            <div className="flex justify-end">
+              <span className="text-xs text-gray-500">{currentTime}</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-start">
+          <div className="bg-gray-100 p-3 rounded-2xl max-w-xs text-black">
             <p>I understand how upsetting it is to lose your money, {name}.</p>
-            <div className="flex justify-end items-center">
+            <div className="flex justify-end">
               <span className="text-xs text-gray-500">{currentTime}</span>
             </div>
           </div>
         </div>
 
-        <div className="flex justify-start mb-2">
-          <div className="bg-gray-100 w-[280px] text-black p-3 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl max-w-xs">
-            <p>As a security measure, we&apos;ll first verify your payment details and block the account to which you&apos;ve made this payment.</p>
-            <div className="flex justify-end items-center">
+        <div className="flex justify-start">
+          <div className="bg-gray-100 p-3 rounded-2xl max-w-xs text-black">
+            <p>
+              As a security measure, we&apos;ll first verify your payment details and block
+              the account to which you&apos;ve made this payment.
+            </p>
+            <div className="flex justify-end">
               <span className="text-xs text-gray-500">{currentTime}</span>
             </div>
           </div>
         </div>
 
-        <div className="flex justify-end mb-2">
-          <div className="bg-[#f0eaf8] text-black p-3 rounded-tl-2xl rounded-bl-2xl rounded-br-2xl max-w-xs">
+        <div className="flex justify-end">
+          <div className="bg-[#f0eaf8] p-3 rounded-2xl max-w-xs text-black">
             <p>Yes, block the fraudster&apos;s account.</p>
-            <div className="flex justify-end items-center">
+            <div className="flex justify-end">
               <span className="text-xs text-gray-500">{currentTime}</span>
             </div>
           </div>
         </div>
 
-        <div className="flex justify-start mb-2">
-          <div className="bg-gray-100 w-[280px] text-black p-3 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl max-w-xs">
+        <div className="flex justify-start">
+          <div className="bg-gray-100 p-3 rounded-2xl max-w-xs text-black">
             <p>Could you please tell me how the fraudster contacted you?</p>
-            <div className="flex justify-end items-center">
+            <div className="flex justify-end">
               <span className="text-xs text-gray-500">{currentTime}</span>
             </div>
           </div>
         </div>
 
-        <div className="flex justify-end mb-2">
-          <div className="bg-[#f0eaf8] text-black p-3 rounded-tl-2xl rounded-bl-2xl rounded-br-2xl max-w-xs">
-            <p>I received a link or notification</p>
-            <div className="flex justify-end items-center">
-              <span className="text-xs text-gray-500">{currentTime}</span>
-            </div>
-          </div>
-        </div>
-        <div className="flex justify-end mb-2 mt-32">
-          <div className="bg-[#f0eaf8] text-black p-3 rounded-tl-2xl rounded-bl-2xl rounded-br-2xl max-w-xs">
-            <p>No</p>
-            <div className="flex justify-end items-center">
-              <span className="text-xs text-gray-500">{currentTime}</span>
-            </div>
-          </div>
-        </div>
-        <div className="flex justify-start mb-2">
-          <div className="bg-gray-100 w-[250px] text-black p-3 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl max-w-xs">
-            <p>Sure. While we cannot cancel or reverse payments, We&apos;ll check this for you and take necessary action.</p>
-            <div className="flex justify-end items-center">
+        <div className="flex justify-end">
+          <div className="bg-[#f0eaf8] p-3 rounded-2xl max-w-xs text-black">
+            <p>I received a link or notification.</p>
+            <div className="flex justify-end">
               <span className="text-xs text-gray-500">{currentTime}</span>
             </div>
           </div>
         </div>
 
-        <div className="flex justify-start mb-2">
-          <div className="bg-gray-100 w-[250px]  text-black p-3 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl max-w-xs">
-            <p>The cybercrime cell may be able to help you get your money back after you raise a complaint with them. Tap <span className="text-[#6A1B9A] font-semibold">here</span> or call 1930 to do so.</p>
-            <div className="flex justify-end items-center">
-              <span className="text-xs text-gray-500">{currentTime}</span>
-            </div>
-          </div>
-        </div>
-   
-        <div className="flex justify-start mb-2">
-          <div className="bg-gray-100 w-[250px]  text-black p-3 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl max-w-xs">
-            <p>You can also raise a <span className="text-[#6A1B9A] font-semibold ">complaint with your bank.</span> </p>
-            <div className="flex justify-end items-center">
+        <div className="flex justify-start">
+          <div className="bg-gray-100 p-3 rounded-2xl max-w-xs text-black">
+            <p>
+              Sure. While we cannot cancel or reverse payments, we&apos;ll check this
+              for you and take necessary action.
+            </p>
+            <div className="flex justify-end">
               <span className="text-xs text-gray-500">{currentTime}</span>
             </div>
           </div>
         </div>
 
-        {/* Display the dynamic ticket number */}
-  
-
-        <div className="flex justify-start mb-2">
-          <div className="bg-gray-100 w-[250px]  text-black p-3 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl max-w-xs">
-            
-            <p> We hope this information was helpful. <br/> <br/> We&apos;ve created the ticket {ticketNumber} for you. To view it, Tap? on the top right corner of your app&apos;s home screen and then tap <span className="font-semibold"> My Tickets</span>.</p>
-            <div className="flex justify-end items-center">
+        <div className="flex justify-start">
+          <div className="bg-gray-100 p-3 rounded-2xl max-w-xs text-black">
+            <p>
+              The cybercrime cell may be able to help you get your money back after
+              you raise a complaint with them. Tap{" "}
+              <span className="text-[#6A1B9A] font-semibold">here</span> or call 1930 to
+              do so.
+            </p>
+            <div className="flex justify-end">
               <span className="text-xs text-gray-500">{currentTime}</span>
             </div>
           </div>
         </div>
 
-        <div className="flex justify-start mb-2">
-          <div className="bg-gray-100 w-[250px]  text-black p-3 rounded-tr-2xl rounded-br-2xl rounded-bl-2xl max-w-xs">
+        <div className="flex justify-start">
+          <div className="bg-gray-100 p-3 rounded-2xl max-w-xs text-black">
+            <p>
+              You can also raise a{" "}
+              <span className="text-[#6A1B9A] font-semibold">
+                complaint with your bank
+              </span>
+              .
+            </p>
+            <div className="flex justify-end">
+              <span className="text-xs text-gray-500">{currentTime}</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Ticket Info */}
+        <div className="flex justify-start">
+          <div className="bg-gray-100 p-3 rounded-2xl max-w-xs text-black">
+            <p>
+              We&apos;ve created the ticket <b>{ticketNumber}</b> for you.  
+              To view it, tap on the top right corner of your app&apos;s home screen and
+              then tap <span className="font-semibold">My Tickets</span>.
+            </p>
+            <div className="flex justify-end">
+              <span className="text-xs text-gray-500">{currentTime}</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-start">
+          <div className="bg-gray-100 p-3 rounded-2xl max-w-xs text-black">
             <p>Do you want to report any other fraud payments?</p>
-            <div className="flex justify-end items-center">
+            <div className="flex justify-end">
               <span className="text-xs text-gray-500">{currentTime}</span>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Name Input */}
-      <div className="p-4">
+      {/* Input Fields */}
+      <div className="p-4 space-y-3">
         <input
+          className="border border-gray-300 rounded-md p-2 w-full"
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="Enter your name"
         />
-      </div>
-
-      {/* Account Input */}
-      <div className="p-4">
         <input
+          className="border border-gray-300 rounded-md p-2 w-full"
           type="text"
           value={account}
           onChange={(e) => setAccount(e.target.value)}
           placeholder="Enter account details"
         />
-        
       </div>
-  
     </div>
-
-   
-    </div>
-    
   );
 }
 
