@@ -21,7 +21,7 @@ const HeaderBar = () => {
       
       
     <div className="flex items-center gap-3 mr-6">
-      <div>  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*RjJVjIm_-ATx7gjNGXveWg.png" alt="PhonePe" width={30} className="rounded-md"  /> </div>
+      <div>  <img src="https://s3-alpha.figma.com/hub/file/2736691733/resized/1200x720/3e8b77fb-3995-4701-bb49-a72b7f2746e1-cover.png" alt="PhonePe" width={30} className="rounded-md"  /> </div>
     <div className="font-bold">PhonePe Support</div>
 
     </div>
