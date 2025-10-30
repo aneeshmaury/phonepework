@@ -96,7 +96,7 @@ function App() {
 
         <div className="flex justify-end">
           <div className="bg-[#f0eaf8] p-3 rounded-2xl max-w-xs text-black">
-            <p>{account ? account : "Account details here..."}</p>
+            <p>{account ? account : ""}</p>
             <div className="flex justify-end">
               <span className="text-xs text-gray-500">{currentTime}</span>
             </div>
@@ -145,6 +145,15 @@ function App() {
         <div className="flex justify-end">
           <div className="bg-[#f0eaf8] p-3 rounded-2xl max-w-xs text-black">
             <p>I received a link or notification.</p>
+            <div className="flex justify-end">
+              <span className="text-xs text-gray-500">{currentTime}</span>
+            </div>
+          </div>
+        </div>
+
+         <div className="flex justify-end">
+          <div className="bg-[#f0eaf8] p-3 rounded-2xl max-w-xs text-black">
+            <p>No</p>
             <div className="flex justify-end">
               <span className="text-xs text-gray-500">{currentTime}</span>
             </div>
