@@ -111,7 +111,7 @@ function App() {
           <div className="bg-[#f0eaf8] text-black p-3 rounded-tl-2xl rounded-bl-2xl rounded-br-2xl max-w-xs">
             <p>{account}</p>
             <div className="flex justify-end items-center">
-              <span className="text-xs text-gray-500">{currentTime}</span>
+              <span className="text-xs text-gray-500">{currentTime}</span >
             </div>
           </div>
         </div>
