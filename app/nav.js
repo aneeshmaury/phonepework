@@ -218,7 +218,7 @@ function App() {
             <p>We hope this information was helpful</p>
             <br/>
             <p>
-              We&apos;ve created the ticket <b>{ticketNumber}</b> for you.  
+              We&apos;ve created the ticket {ticketNumber} for you.  
               To view it, Tap ? on the top right corner of your app&apos;s home screen and
               then tap <span className="font-semibold">My Tickets</span>.
             </p>
