@@ -23,7 +23,7 @@ const HeaderBar = () => {
 
       
     <div className="flex items-center gap-3 mr-6">
-      <div>  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVf6nm-Dk1ELbj1aBfeN_vJH6R1wAqYWnltw&s" alt="PhonePe" width={30} className="rounded-md"  /> </div>
+      <div>  <img src="https://icons8.com/icon/OYtBxIlJwMGA/phone-pe" alt="PhonePe" width={30} className="rounded-md"  /> </div>
     <div className="font-bold">PhonePe Support</div>
 
     </div>
