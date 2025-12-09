@@ -30,8 +30,8 @@ const HeaderBar = () => {
 
 function App() {
   const [currentTime, setCurrentTime] = useState("");
-  const [name, setName] = useState("Aneesh Kumar Maury");
-  const [account, setAccount] = useState("");
+  const [name, setName] = useState("");
+  const [account, setAccount] = useState("Aneesh Kumar Maury");
   const [ticketNumber, setTicketNumber] = useState("");
 
   // Update current time every minute
