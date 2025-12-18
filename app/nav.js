@@ -160,8 +160,7 @@ function App() {
 <div className="flex justify-start">
           <div className="bg-gray-100 p-3 rounded-2xl max-w-xs text-black">
             <p>
-              Sure. While we cannot cancel or reverse payments, we&apos;ll check this
-              for you and take necessary action.
+            Is there anything else you would like to share?
             </p>
             <div className="flex justify-end">
               <span className="text-xs text-gray-500">{currentTime}</span>
@@ -179,9 +178,10 @@ function App() {
  
         <div className="flex justify-start">
           <div className="bg-gray-100 p-3 rounded-2xl max-w-xs text-black">
-            <p>
-              Sure. While we cannot cancel or reverse payments, we&apos;ll check this
-              for you and take necessary action.
+         
+          <p>
+              Sure. Please raise a complaint with the cyber crime cell by tapping Tap{" "}
+              <span className="text-[#6A1B9A] font-semibold underline underline-offset-1 ">here</span> or call 1930. Also, do raise a <span className="text-[#6A1B9A] font-semibold underline underline-offset-1">complaint with your bank.</span>
             </p>
             <div className="flex justify-end">
               <span className="text-xs text-gray-500">{currentTime}</span>
@@ -192,10 +192,7 @@ function App() {
         <div className="flex justify-start">
           <div className="bg-gray-100 p-3 rounded-2xl max-w-xs text-black">
             <p>
-              The cybercrime cell may be able to help you get your money back after
-              you raise a complaint with them. Tap{" "}
-              <span className="text-[#6A1B9A] font-semibold">here</span> or call 1930 to
-              do so.
+           In the meantime, we&apos;ll verify your payment details, and block the fraudster&apos;s account.
             </p>
             <div className="flex justify-end">
               <span className="text-xs text-gray-500">{currentTime}</span>
@@ -206,11 +203,11 @@ function App() {
         <div className="flex justify-start">
           <div className="bg-gray-100 p-3 rounded-2xl max-w-xs text-black">
             <p>
-              You can also raise a{" "}
-              <span className="text-[#6A1B9A] font-semibold">
-                complaint with your bank
+              Please know that we cannot cancel or reverse payments. The cyber crime cell may {""}
+              <span className="text-[#6A1B9A] font-semibold underline underline-offset-1">
+                help you get your money back {" "}
               </span>
-              .
+              after you raise a complaint.
             </p>
             <div className="flex justify-end">
               <span className="text-xs text-gray-500">{currentTime}</span>
