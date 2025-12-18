@@ -1,6 +1,11 @@
+"use client";
+import Image from "next/image";
+
 import React, { useEffect, useState } from "react";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { FaArrowLeft } from "react-icons/fa";
+
+
 
 const HeaderBar = () => {
   return (
@@ -8,10 +13,11 @@ const HeaderBar = () => {
       <div className="flex items-center justify-between h-[60px] px-4">
         <div className="flex items-center gap-3">
           <FaArrowLeft className="text-gray-700 text-sm" />
-          <img
+           <image
             src="https://s3-alpha.figma.com/hub/file/2736691733/resized/1200x720/3e8b77fb-3995-4701-bb49-a72b7f2746e1-cover.png"
             alt="PhonePe"
             width={32}
+            height={32}
             className="rounded-md"
           />
           <div className="font-semibold text-gray-800 text-lg">
@@ -30,7 +36,7 @@ const HeaderBar = () => {
 
 function App() {
   const [currentTime, setCurrentTime] = useState("");
-  const [name, setName] = useState("Aneesh Kumar Maury");
+  const [name, setName] = useState("Aneesh Kumar Maur");
   const [account, setAccount] = useState("");
   const [ticketNumber, setTicketNumber] = useState("");
 
