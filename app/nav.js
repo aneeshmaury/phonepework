@@ -36,7 +36,7 @@ const HeaderBar = () => {
 
 function App() {
   const [currentTime, setCurrentTime] = useState("");
-  const [name, setName] = useState("Aneesh Kumar Maury");
+  const [name, setName] = useState(" ");
   const [account, setAccount] = useState("");
   const [ticketNumber, setTicketNumber] = useState("");
 
